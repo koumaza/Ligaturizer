@@ -284,9 +284,9 @@ def ligaturize_font(input_font_file, output_dir, ligature_font_file,
     # Generate font type (TTF or OTF) corresponding to input font extension
     # (defaults to TTF)
     if input_font_file[-4:].lower() == '.ttf':
-        output_font_type = '.otf'
-    else:
         output_font_type = '.ttf'
+    else:
+        output_font_type = '.otf'
 
     # Generate font & move to output directory
     output_font_file = path.join(output_dir, font.fontname + output_font_type)
